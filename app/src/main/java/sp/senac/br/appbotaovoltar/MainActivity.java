@@ -16,10 +16,12 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar)findViewById(R.id.idToolBar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_home_dp);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(false);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle("Voltar");
 
-        getSupportActionBar().setIcon(R.drawable.ic_arrow_dp);
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
